@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./src",
+    "paths": {
+      "app/*": ["src/app/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"],
+  "include": [
+    "src/**/*"
+  ]
+}

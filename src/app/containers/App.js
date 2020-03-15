@@ -1,34 +1,38 @@
 import React from "react";
-import {connect} from "react-redux";
+import { connect } from "react-redux";
+import styled from "@emotion/styled";
 
-import { User } from "../components/User";
-import { Main } from "../components/Main";
+import DashboardContainer from "./dashboard/DashboardContainer";
 import { setName } from "../actions/userActions";
 
+const AppWrapper = styled.div`
+  height: 100vh;
+  overflow: hidden;
+`;
+
 class App extends React.Component {
-    render() {
-        return (
-            <div className="container">
-                <Main changeUsername={() => this.props.setName("Anna")}/>
-                <User username={this.props.user.name}/>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <AppWrapper>
+        <DashboardContainer />
+      </AppWrapper>
+    );
+  }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
-      user: state.user,
-      math: state.math
+    user: state.user,
+    math: state.math
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        setName: (name) => {
-            dispatch(setName(name));
-        }
-    };
+const mapDispatchToProps = dispatch => {
+  return {
+    setName: name => {
+      dispatch(setName(name));
+    }
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

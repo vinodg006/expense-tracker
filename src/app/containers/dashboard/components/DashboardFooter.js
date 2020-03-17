@@ -17,7 +17,7 @@ const ElementStyle = styled.div`
 
 const FooterText = styled.div`
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
 `;
 
 const FooterIcon = styled.i`

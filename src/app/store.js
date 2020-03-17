@@ -1,13 +1,12 @@
-import {createStore, combineReducers} from "redux";
-// import logger from "redux-logger";
+import { createStore, combineReducers } from "redux";
 
-import math from "./reducers/mathReducer";
+import dashboard from "./reducers/dashboardReducer";
 import user from "./reducers/userReducer";
 
 export default createStore(
-    combineReducers({
-        math,
-        user
-    }),
-    {}
+  combineReducers({
+    dashboard,
+    user
+  }),
+  {}
 );

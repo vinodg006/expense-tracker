@@ -21,12 +21,15 @@
     "@emotion/styled": "^10.0.5",
     "bootstrap-icons": "^1.0.0-alpha2",
     "emotion-theming": "^10.0.10",
+    "lodash": "^4.17.15",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-emotion": "^9.2.12",
     "react-redux": "^7.2.0",
     "reactstrap": "^8.4.1",
-    "redux": "^4.0.5"
+    "reactstrap-date-picker": "0.0.7",
+    "redux": "^4.0.5",
+    "reselect": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
